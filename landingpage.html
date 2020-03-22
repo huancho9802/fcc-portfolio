@@ -1,0 +1,54 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<style>
+img {
+  display: block;
+  margin: auto;
+  max-width: 20%;
+  height: auto;
+}
+#nav-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 500px) {
+  #nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    right: 575px;
+  }
+}
+
+</style>
+
+<header id="header">
+  <nav id="nav-bar">
+    <a href="#history" class="nav-link">History</a>
+    <a href="#function" class="nav-link">Function</a>
+    <a href="#future" class="nav-link">Future</a>
+  </nav>
+  <img id="header-img" src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="Google Logo">
+</header>
+<div id="content">
+<div id="history">
+  <h3>History</h3>
+  <p>Google was created in a garage in California by Larry Page and Sergey Brin, students at Stanford University
+</div>
+<div id="function">
+  <h3>Function</h3>
+  <p>Google was initially created as a search engine using the PageRank algorithm. However, since then the company has expanded into many different areas of the Internet such as videos (YouTube), navigation (Maps) and many more.
+</div>
+<div id="future">
+  <h3>Future</h3>
+  <p>I don't fucking know.</p>
+</div>
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Nsbp0GQHOGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Email" name="email" required>
+  <input type="submit" id="submit" value="Submit">
+</form>
+</div>
+<footer>Page created by Huan Q. Le</footer>
