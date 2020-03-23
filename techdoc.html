@@ -1,0 +1,96 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<style>
+@media (min-width: 900px) {
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "sidebar content"
+}
+#main-doc {
+  grid-area: content;
+  justify-self: start;
+}
+#sidebar {
+  position: fixed;
+  grid-area: sidebar;
+}
+}
+</style>
+
+
+<div class="container">
+  <div id="sidebar">
+    <nav id="navbar">
+      <header>
+        <h1>Programming Languages</h1>
+        <div><a href="#python" class="nav-link">Python</a></div>
+        <div><a href="#c++" class="nav-link">C++</a></div>
+        <div><a href="#java" class="nav-link">Java</a></div>
+        <div><a href="#pascal" class="nav-link">Pascal</a></div>
+        <div><a href="#go" class="nav-link">Go</a></div>
+      </header>
+    </nav>
+  </div>
+  <main id="main-doc">
+    <section class="main-section" id="python">
+      <header><h1>Python</h1></header>
+      <p> An open-source programming language.</p>
+      <div><code>print("Hello World!")</code></div>
+      <p>Pros:</p>
+      <ol>
+        <li>Easy to read</li>
+        <li>Natural</li>
+      </ol>
+    </section>
+    <section class="main-section" id="c++">
+      <header><h1>C++</h1></header>
+      <p> A classic programming language</p>
+      <div><code>cout << "Hello World!" << endl;</code></div>
+      <p>Pros:</p>
+      <ol>
+        <li>Fast compiling</li>
+        <li>Extensive libraries</li>
+      </ol>
+    </section>
+    <section class="main-section" id="java">
+      <header><h1>Java</h1></header>
+      <p> Created by Dennis Ritchie at Sun Microsystems.</p>
+      <div><code>System.out.println( "Hello World!" );</code></div>
+      <p>Pros:</p>
+      <ol>
+        <li>Extensive libraries</li>
+        <li>Wide applications</li>
+      </ol>
+    </section>
+    <section class="main-section" id="pascal">
+      <header><h1>Pascal</h1></header>
+      <p> An archaic programming language</p>
+      <div><code>WriteLn('Hello World!');</code></div>
+      <p>Pros:</p>
+      <ol>
+        <li>No pros</li>
+        <li>If you still use this plz find something better.</li>
+      </ol>
+    </section>
+    <section class="main-section" id="go">
+      <header><h1>Go</h1></header>
+      <p> A new prog lang.</p>
+      <div><code>fmt.Printf("Hello World\n")</code></div>
+      <p>Pros:</p>
+      <ol>
+        <li>Easy to read</li>
+        <li>New</li>
+      </ol>
+    </section>
+  </main>
+  </div>
+  
+  
+  
+  
+</div>
